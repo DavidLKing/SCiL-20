@@ -7,7 +7,7 @@ These tools boil down into 3 main components:
 - `check.py` A script for finding differences in edit operations.
 - `maxent_test.py` A script for generate maxent datasets.
 
-All scripts are intended to run with python3. [Gensim](https://radimrehurek.com/gensim/) is also required for `maxent_test.py. Additionally, the original seq2seq to implementation is no longer supported. Feel free to use our partial implementation [here](https://github.com/davidlking/med-pytorch) or any other implementation you prefer. 
+All scripts are intended to run with python3. [Gensim](https://radimrehurek.com/gensim/) is also required for `maxent_test.py. Additionally, the original seq2seq to implementation is no longer supported. Feel free to use our partial reimplementation [here](https://github.com/davidlking/med-pytorch) or any other implementation you prefer. 
 
 ## `pull*.py`
 
