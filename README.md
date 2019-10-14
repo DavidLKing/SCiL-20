@@ -2,9 +2,9 @@
 
 Various tools we used in the paper "Interpreting Sequence-to-Sequence Models for Russian Inflectional Morphology"
 
-These tools boild down into 3 main companenets:
+These tools boil down into 3 main components:
 - `pull*.py` A script for extracting all errors and correct forms with their morphosyntactic feature sets.
-- `check.py` A script for find differences in edit operations.
+- `check.py` A script for finding differences in edit operations.
 - `maxent_test.py` A script for generate maxent datasets.
 
 All scripts are intended to run with python3. [Gensim](https://radimrehurek.com/gensim/) is also required for `maxent_test.py.
@@ -15,7 +15,7 @@ For `pullerrors.py` and `pullright.py`, simply run the script on any seq2seq out
 
 `$ ./pullerrors.py FILE`
 
-Where `FILE` is any seq2seq output with a format identical to `data/russian-sample-output.tsv`.  This will output another `tsv` to `stdout` _either_ the erroneous or correct forms with their morphosyntactic tags (useful for isolating problematic paradigm cells)
+Where `FILE` is any seq2seq output with a format identical to `data/russian-sample-output.tsv`.  This will output another `tsv` to `stdout` with _either_ the erroneous or correct forms and their morphosyntactic tags (useful for isolating problematic paradigm cells)
 
 
 ## `check.py
@@ -39,7 +39,7 @@ optional arguments:
                         (separated)
 
 ```
-This script comapares gold vs. predicted output Input and output files must be specified. Additionally, either `--wrong` or `correct` should be specified, dependending on your task.  You should also specify whether the input has factored morphosyntactic property sets or not. 
+This script compares gold vs. predicted output Input and output files must be specified. Additionally, either `--wrong` or `correct` should be specified, depending on your task.  You should also specify whether the input has factored morphosyntactic property sets or not. 
 
 Sample usage:
 `./check.py -i data/russian-sample-output.tsv -o test.tsv --wrong --not-factored`
@@ -71,7 +71,7 @@ optional arguments:
 ```
 All arguments are required.
 
-Use this script to generate the datasets we used for the post hoc inflection class analsys. In addition to this script, you'll need one (or all) of the UD Russian corpora (we used [SynTagRus](https://universaldependencies.org/treebanks/ru_syntagrus/index.html)), Hal Daumé's [MegaM](http://users.umiacs.umd.edu/~hal/megam/version0_3/)) maxent implementation, and the Russian [Unimorph](https://github.com/unimorph/rus) (a sample can be found [here](https://dlk.sdf.org/transfer/rus-unimorph.tsv)). Additionally, you'll need Russian vectors. For testing, feel free to use [these](https://dlk.sdf.org/transfer/vectors.50.bin)---they're awful, but feel free to prototype with them. 
+Use this script to generate the datasets we used for the post hoc inflection class analsys. In addition to this script, you'll need one (or all) of the UD Russian corpora (we used [SynTagRus](https://universaldependencies.org/treebanks/ru_syntagrus/index.html)), Hal Daumé's [MegaM](http://users.umiacs.umd.edu/~hal/megam/version0_3/)) maxent implementation, and the Russian [Unimorph](https://github.com/unimorph/rus) (a sample can be found [here](https://dlk.sdf.org/transfer/rus-unimorph.tsv)). Additionally, you'll need Russian word embeddings. For testing, feel free to use [these](https://dlk.sdf.org/transfer/vectors.50.bin)---they're awful, but feel free to prototype with them. 
 
 
 
