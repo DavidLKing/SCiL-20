@@ -85,9 +85,7 @@ Starting dev
 Starting test
 Writing files
 
-$ ./megam_i686.opt -nc -tune binomial nouns.tsv > nouns.cls 
-Fatal error: exception Failure("-nc must be used with multiclass or multitron optimization")
-(base) david@Arjuna:~/bin/git/MED-pytorch/maxenttest$ megam_i686.opt -nc -tune multiclass nouns.txt > nouns.cls 
+$ ./megam_i686.opt -nc -tune multiclass nouns.txt > nouns.cls 
 Scanning file...13788 train, 5041 dev, 5212 test, reading...done
 optimizing with lambda = 1
 it 1   dw 7.772e-01 pp 6.70785e-01 er 0.19727 dpp 6.27489e-01 der 0.15076 tpp 6.50583e-01 ter 0.17383
