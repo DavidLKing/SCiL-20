@@ -71,7 +71,7 @@ optional arguments:
 ```
 All arguments are required.
 
-Use this script to generate the datasets we used for the post hoc inflection class analsys. In addition to this script, you'll need one (or all) of the UD Russian corpora (we used [SynTagRus](https://universaldependencies.org/treebanks/ru_syntagrus/index.html)), Hal Daumé's [MegaM](http://users.umiacs.umd.edu/~hal/megam/version0_3/)) maxent implementation, and the Russian [Unimorph](https://github.com/unimorph/rus) (a sample can be found [here](https://dlk.sdf.org/transfer/rus-unimorph.tsv)). Additionally, you'll need Russian word embeddings. For testing, feel free to use [these](https://dlk.sdf.org/transfer/vectors.50.bin)---they're awful, but feel free to prototype with them. 
+Use this script to generate the datasets we used for the post hoc inflection class analsys. In addition to this script, you'll need one (or all) of the UD Russian corpora (we used [SynTagRus](https://universaldependencies.org/treebanks/ru_syntagrus/index.html)), Hal Daumé's [MegaM](http://users.umiacs.umd.edu/~hal/megam/version0_3/) maxent implementation, and the Russian [Unimorph](https://github.com/unimorph/rus) (a sample can be found [here](https://dlk.sdf.org/transfer/rus-unimorph.tsv)). Additionally, you'll need Russian word embeddings. For testing, feel free to use [these](https://dlk.sdf.org/transfer/vectors.50.bin)---they're awful, but feel free to prototype with them. 
 
 
 
